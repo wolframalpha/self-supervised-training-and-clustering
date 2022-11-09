@@ -1543,3 +1543,5 @@
 19:06:02 modelv2 Epoch 1 total_loss 1465.7653303146362 lr 0.001
 19:24:37 modelv2 Epoch 2 total_loss 1331.4739627838135 lr 0.001
 19:51:27 modelv2 Epoch 0 total_loss 1788.3089561462402 lr 0.001
+20:11:29 modelv2 Epoch 1 total_loss 1545.2999470233917 lr 0.001
+20:31:30 modelv2 Epoch 2 total_loss 1369.3499193191528 lr 0.001
