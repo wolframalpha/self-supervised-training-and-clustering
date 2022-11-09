@@ -78,11 +78,11 @@ test_tfms =  transforms.Compose([
 
 def get_train_dl(dirs, return_aug=True):
     ds = AugmentImageDataset(file_dirs=dirs, tfms=train_tfms, return_aug=return_aug)
-    dl = DataLoader(ds,batch_size=256, shuffle=True)
+    dl = DataLoader(ds,batch_size=512, shuffle=True, num_workers=16)
     return dl
 
 def get_test_dl(dirs, return_aug=False, return_fp=True):
     ds = AugmentImageDataset(file_dirs=dirs, tfms=test_tfms, return_aug=return_aug, return_fp=return_fp)
-    dl = DataLoader(ds, batch_size=256, shuffle=False)
+    dl = DataLoader(ds, batch_size=512, shuffle=False, num_workers=16)
 
     return dl

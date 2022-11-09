@@ -6,7 +6,7 @@ import torch.nn.functional as F
 class Model(torch.nn.Module):
     def __init__(self, features_dim=128):
         super(Model, self).__init__()
-        self.backbone = models.resnet18(pretrained=True)
+        self.backbone = models.resnet18(pretrained=False)
         self.backbone.fc = torch. nn.Linear(512, 256)
         self.backbone_dim = self.backbone.fc.out_features
         self.head = nn.Sequential(
